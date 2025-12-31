@@ -24,6 +24,14 @@ Threads < Warps (= 32 threads) < Blocks (= Multiple Warps)
 
 Each computation that acts across blocks needs to go to global memory. Ideally threads only work on local and/or shared memory.
 
+On a A100:
+    Compute: streaming multiprocessors (SMs) [A100: 108]
+    Memory:
+    
+DRAM [A100: 80GB] - big, slow
+L2 cache [A100: 40MB]
+L1 cache [A100: 192KB per SM] - small, fast
+
 
 ## How to make GPUs go brrrrr...
 
