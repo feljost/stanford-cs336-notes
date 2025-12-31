@@ -75,7 +75,7 @@ Overfitting can be quite problematic with smaller fine tuning data. Deepseek's s
 
 #### Upcycling of Dense Models into MoE
 
-Just take a dense model, and make copies of the MLP block, then use that as a starting point for all experts. First Qwen MoE did this.
+Just take a dense model, make copies of the MLP block, then use that as a starting point for all experts. First Qwen MoE did this.
 
 #### DeepSeek implementations
 
